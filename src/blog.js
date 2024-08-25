@@ -1,26 +1,24 @@
 import { Routes, Route } from 'react-router';
-import { Header } from './components';
+import { Header, Footer } from './components';
 import styled from 'styled-components';
 
 const AppColumn = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-width: 1000px;
-min-height: 100%
-margin: 0 auto;
-background-color: #fff;`;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 1000px;
+	min-height: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+`;
 
 const Content = styled.div`
-	padding 120px 0;
-
+	padding: 120px 0;
 `;
 
 const h2 = styled.h2`
 	text-align: center;
 `;
-
-const Footer = () => <div>Футер</div>;
 
 export const Blog = () => {
 	return (
